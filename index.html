@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class Temperature{
+        constructor(c) {
+            this.temp = c;
+        }
+
+        getF(){
+            let F = (9/5) * this.temp + 32;
+            console.log(F);
+        }
+        getK(){
+            let K = 273.15 + this.temp;
+            console.log(K);
+        }
+    }
+
+    let temp = new Temperature(50);
+    temp.getF();
+    temp.getK();
+</script>
+</html>
